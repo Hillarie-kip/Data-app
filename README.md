@@ -1,23 +1,86 @@
-# Data-app
-###Welcome to the ShambaREcords Flutter test
-Kindly follow the instructions to commit your work to the shared repo. You will create a remote branch containing your work. Your code should be available as a branch in the repository.
+# SHAMBA APP DATA 
 
-####Steps
-* Accept the invitation we sent you to the repository Data-app
-* Go to the url https://github.com/ShambaRecords/Data-app/
-* Fork the repository.
-* Create a branch on your local machine with the command below:
-   git checkout -b [username/nameOfYourApp] 
-* An example is: git checkout -b ShambaRecords/Data-app
-* You should now have a local branch on your machine. Go ahead and add your work as follows:
-* Create a data collection tool with flutter which allows for user registration during a training, mark the attendance and also capture the location gps
-  git add yourwork
-  git commit -m 'work from ShambaRecords' 
-  git push origin ShambaRecords/Data-app
-From here, you should enter your username and password on github
 
-*To see all the branches use:  git branch
 
-#####Some Resources for getting started.
-* You can use the git getting started guide: http://rogerdudler.github.io/git-guide/
+## Table of contents
 
+- [User Registration](#description)
+- [User List](#onboarding-module)
+- [Attendants Registry](#patient-module)
+- [ Admin GPS Location](#doctor-module)
+
+
+
+## Dependencies
+  sqflite: any
+  -to minimize communication to server as data can be stored locally and transmitted when there is a connection
+  
+  google_fonts: ^1.1.1
+  - to beautify text
+ 
+  intl: ^0.17.0-nullsafety.2
+  - Provides internationalization and localization facilities
+  
+  fluttertoast: ^7.1.8
+  - just a toast style (not a must)
+  
+  google_maps_flutter: ^1.0.6
+  geolocator: ^6.1.13
+  geocoder: ^0.2.1
+  location: ^3.0.2
+  
+  -the above 4 dependencies is to provide most out of the geospatial data
+  
+  awesome_dialog: ^1.2.0
+  
+
+
+## Description
+
+The purpose of the test is to complete the named task with clean and minimum library dependencies in the project to avoid depending on someones code.
+ Uses Sqlite database for offline running..once complete app will send data is JSON Format i.e
+ 
+ ```json
+{
+"AdminID":1,
+"AttendanceID":682,
+"Present":3,
+"Absent":3,
+"AttendanceDate":"2020-03-12",
+"AttendantList":[
+                {
+                "UserID":1,
+                "ReportID":682
+                 },
+                 {
+                "UserID":2,
+                "ReportID":682
+                 },
+                 {
+                "UserID":3,
+                "ReportID":682
+                 }
+                
+                ]
+}
+```
+
+
+## Screen Module
+
+
+1
+![Registration](screenshots/register.png)
+
+2
+![User-List](screenshots/users.png)
+2
+![Attendant-List](screenshots/Attendants.png)
+2
+![Submit-List](screenshots/location.png)
+
+
+## Author Info
+
+- Name: Hillarie Kalya
+- Email : kalyahillary@gmail.com
