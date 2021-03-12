@@ -13,7 +13,7 @@
 
 ## Dependencies
   sqflite: any
-  -to minimize communication to server as data can be stored locally and transmitted when there is a connection
+  - to minimize communication to server as data can be stored locally and transmitted when there is a connection
   
   google_fonts: ^1.1.1
   - to beautify text
@@ -29,9 +29,10 @@
   geocoder: ^0.2.1
   location: ^3.0.2
   
-  -the above 4 dependencies is to provide most out of the geospatial data
+  - the above 4 dependencies is to provide most out of the geospatial data
   
   awesome_dialog: ^1.2.0
+   - pop up dialog
   
 
 
@@ -70,14 +71,14 @@ The purpose of the test is to complete the named task with clean and minimum lib
 
 
 1
-![Registration](screenshots/register.png)
+![Registration](scrrenshots/register.png)
 
 2
-![User-List](screenshots/users.png)
+![User-List](scrrenshots/users.png)
 2
-![Attendant-List](screenshots/Attendants.png)
+![Attendant-List](scrrenshots/Attendants.png)
 2
-![Submit-List](screenshots/location.png)
+![Submit-List](scrrenshots/location.png)
 
 
 ## Author Info
